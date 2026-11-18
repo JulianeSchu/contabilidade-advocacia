@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aegis & Associados | Contabilidade Consultiva & Advocacia Empresarial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR FIXO -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <div class="logo-crest">A</div>
+        <span>Aegis <strong>& Associados</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#servicos" class="nav-link">Áreas de Atuação</a>
+        <a href="#autoridade" class="nav-link">Resultados</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn btn-primary btn-sm">Agendar Reunião</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            ✦ Advocacia & Contabilidade Estratégica
+          </div>
+          <h1>Segurança jurídica e eficiência fiscal para o seu <span>negócio escalar</span>.</h1>
+          <p class="hero-desc">
+            Soluções integradas de alta performance para empresas que buscam blindagem patrimonial, inteligência tributária e assessoria societária de excelência.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Falar com um Sócio →</a>
+            <a href="#servicos" class="btn btn-outline">Conhecer Soluções</a>
+          </div>
+        </div>
+
+        <div class="hero-card-box">
+          <div class="hero-stats-row" style="margin-bottom: 24px;">
+            <div class="stat-box">
+              <h3>R$ 120M+</h3>
+              <p>Tributos otimizados</p>
+            </div>
+            <div class="stat-box">
+              <h3>18 anos</h3>
+              <p>De tradição e solidez</p>
+            </div>
+          </div>
+          <p style="color: #A1A1AA; font-size: 0.95rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            "Excelência técnica e visão de negócio aliadas para proteger e impulsionar corporações de médio e grande porte."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREAS DE ATUAÇÃO (PAINEL INTERATIVO DE ABAS) -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-header">
+          <span>Áreas de Atuação</span>
+          <h2>Soluções corporativas sob medida</h2>
+          <p>Navegue pelas nossas especialidades e conheça a profundidade da nossa assessoria técnica.</p>
+        </div>
+
+        <div class="services-interactive-wrapper">
+          
+          <!-- MENU DE ABAS (ESQUERDA) -->
+          <div class="services-tabs-list">
+            <button class="service-tab-btn active" data-target="pane-1">
+              <span class="tab-number">01</span>
+              <span class="tab-title-text">Direito Societário & Contratos</span>
+            </button>
+            <button class="service-tab-btn" data-target="pane-2">
+              <span class="tab-number">02</span>
+              <span class="tab-title-text">Planejamento Tributário</span>
+            </button>
+            <button class="service-tab-btn" data-target="pane-3">
+              <span class="tab-number">03</span>
+              <span class="tab-title-text">Contabilidade Consultiva</span>
+            </button>
+            <button class="service-tab-btn" data-target="pane-4">
+              <span class="tab-number">04</span>
+              <span class="tab-title-text">Compliance & LGPD</span>
+            </button>
+            <button class="service-tab-btn" data-target="pane-5">
+              <span class="tab-number">05</span>
+              <span class="tab-title-text">Consultoria Fiscal & Aduaneira</span>
+            </button>
+            <button class="service-tab-btn" data-target="pane-6">
+              <span class="tab-number">06</span>
+              <span class="tab-title-text">Sucessão Patrimonial & Family Office</span>
+            </button>
+          </div>
+
+          <!-- PAINEL DE CONTEÚDO DINÂMICO (DIREITA) -->
+          <div class="services-content-panel">
+            
+            <!-- Pane 1 -->
+            <div class="service-pane active" id="pane-1">
+              <div class="pane-icon">⚖️</div>
+              <h3 class="pane-title serif-font">Direito Societário & Contratos</h3>
+              <p class="pane-desc">Reestruturação societária de alto nível, acordos de sócios blindados, operações de M&A (fusões e aquisições) e elaboração de contratos empresariais complexos voltados para mitigar riscos operacionais.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Acordos de Sócios e Governança Corporativa</li>
+                <li><span>✓</span> Reorganizações Societárias e Holding</li>
+                <li><span>✓</span> Análise e Redação de Contratos Nacionais e Internacionais</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Solicitar Análise Societária →</a>
+            </div>
+
+            <!-- Pane 2 -->
+            <div class="service-pane" id="pane-2">
+              <div class="pane-icon">📊</div>
+              <h3 class="pane-title serif-font">Planejamento Tributário</h3>
+              <p class="pane-desc">Elisão fiscal rigorosa e legal para otimizar a carga tributária da sua operação. Realizamos revisão profunda de regimes (Lucro Real vs Presumido) e recuperação de créditos não aproveitados.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Revisão de Carga Fiscal e Enquadramento</li>
+                <li><span>✓</span> Recuperação de Créditos Tributários Federais</li>
+                <li><span>✓</span> Redução Segura de Tributos Operacionais</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Simular Otimização Tributária →</a>
+            </div>
+
+            <!-- Pane 3 -->
+            <div class="service-pane" id="pane-3">
+              <div class="pane-icon">📋</div>
+              <h3 class="pane-title serif-font">Contabilidade Consultiva</h3>
+              <p class="pane-desc">Superamos a contabilidade burocrática tradicional. Fornecemos demonstrativos gerenciais avançados, dashboards de KPIs e suporte direto à diretoria para decisões financeiras assertivas.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Relatórios Gerenciais e DRE Analítica</li>
+                <li><span>✓</span> Indicadores de Desempenho (KPIs) Financeiros</li>
+                <li><span>✓</span> Alinhamento Estratégico com a Diretoria</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Conhecer Contabilidade Consultiva →</a>
+            </div>
+
+            <!-- Pane 4 -->
+            <div class="service-pane" id="pane-4">
+              <div class="pane-icon">🛡️</div>
+              <h3 class="pane-title serif-font">Compliance & LGPD</h3>
+              <p class="pane-desc">Implementação de programas de integridade corporativa, prevenção rigorosa a litígios trabalhistas e adequação completa e auditável à Lei Geral de Proteção de Dados.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Programas de Compliance Trabalhista e Cível</li>
+                <li><span>✓</span> Adequação Integral à LGPD (Data Mapping)</li>
+                <li><span>✓</span> Treinamentos de Governança para Equipes</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Proteger Minha Empresa →</a>
+            </div>
+
+            <!-- Pane 5 -->
+            <div class="service-pane" id="pane-5">
+              <div class="pane-icon">🏛️</div>
+              <h3 class="pane-title serif-font">Consultoria Fiscal & Aduaneira</h3>
+              <p class="pane-desc">Assessoria especializada em operações interestaduais complexas, comércio exterior (importação/exportação) e captação de incentivos fiscais regionais e setoriais.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Operações de Comércio Exterior e Drawback</li>
+                <li><span>✓</span> Gestão de Substituição Tributária e Convênios</li>
+                <li><span>✓</span> Aproveitamento de Benefícios Fiscais</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Falar com Especialista Aduaneiro →</a>
+            </div>
+
+            <!-- Pane 6 -->
+            <div class="service-pane" id="pane-6">
+              <div class="pane-icon">🤝</div>
+              <h3 class="pane-title serif-font">Sucessão Patrimonial & Family Office</h3>
+              <p class="pane-desc">Estratégias de preservação e transmissão de ativos familiares entre gerações, estruturação de holdings patrimoniais e proteção contra contingências de mercado.</p>
+              <ul class="pane-features">
+                <li><span>✓</span> Constituição e Gestão de Holdings Familiares</li>
+                <li><span>✓</span> Planejamento Sucessório Preventivo</li>
+                <li><span>✓</span> Governança de Ativos e Family Office</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary" style="width: fit-content; background: var(--primary); color: var(--white);">Planejar Sucessão Patrimonial →</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE AUTORIDADE & NÚMEROS -->
+    <section class="authority-section" id="autoridade">
+      <div class="container">
+        <div class="authority-grid">
+          <div class="authority-item">
+            <h3>+350</h3>
+            <p>Empresas assessoradas em todo o Brasil</p>
+          </div>
+          <div class="authority-item">
+            <h3>99.4%</h3>
+            <p>Índice de êxito em contencioso estratégico</p>
+          </div>
+          <div class="authority-item">
+            <h3>R$ 120M+</h3>
+            <p>Economia tributária gerada para clientes</p>
+          </div>
+          <div class="authority-item">
+            <h3>18 Anos</h3>
+            <p>De atuação sólida no mercado corporativo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE FAQ / PERGUNTAS FREQUENTES EXPANSÍVEIS -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span>Dúvidas Comuns</span>
+          <h2>Esclarecimentos Executivos</h2>
+          <p>Respostas diretas para as principais dúvidas de empresários e gestores sobre nossa assessoria.</p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona a transição da contabilidade atual para a Aegis & Associados?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              Nossa equipe realiza todo o processo de migração de forma 100% digital e assistida. Realizamos a auditoria inicial dos livros fiscais, o alinhamento com o escritório anterior e a importação de dados sem que sua operação sofra qualquer tipo de interrupção.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Qual é o diferencial do Planejamento Tributário Consultivo?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              Diferente da contabilidade tradicional (que apenas apura impostos após o fato gerador), nossa atuação é preventiva e estratégica. Analisamos o enquadramento ideal (Lucro Real, Presumido ou Simples), identificamos créditos tributários não aproveitados e estruturamos operações para reduzir legalmente a carga fiscal.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Atendem empresas de quais portes e segmentos?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              Atendemos majoritariamente empresas de médio e grande porte, holdings patrimoniais, indústrias, prestadoras de serviços de alta complexidade e empresas de tecnologia (software/SaaS) em todo o território nacional.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como é feita a comunicação no dia a dia da assessoria jurídica e contábil?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-answer">
+              Cada cliente possui um gerente de conta executivo dedicado e acesso direto aos sócios. Disponibilizamos canais prioritários via WhatsApp corporativo, reuniões periódicas de alinhamento estratégico e relatórios gerenciais automatizados em tempo real.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO / LEAD B2B -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-wrapper">
+          
+          <div class="contact-info">
+            <span style="color: #A67C52; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; display: block; margin-bottom: 12px;">Inicie uma Parceria</span>
+            <h2>Pronto para elevar o nível da gestão da sua empresa?</h2>
+            <p>Preencha o formulário para agendar uma reunião executiva com um dos nossos sócios ou utilize nossos canais diretos.</p>
+
+            <div class="contact-details-box">
+              <div class="contact-detail-row">
+                <span>📍</span>
+                <div>
+                  <strong>Endereço Corporativo</strong>
+                  <p>Av. Brigadeiro Faria Lima, 1800 — São Paulo, SP</p>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span>📞</span>
+                <div>
+                  <strong>Telefone Executivo</strong>
+                  <p>(11) 3000-4500</p>
+                </div>
+              </div>
+              <div class="contact-detail-row">
+                <span>✉️</span>
+                <div>
+                  <strong>E-mail Institucional</strong>
+                  <p>contato@aegisassociados.com.br</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 24px;" class="serif-font">Agende uma Reunião Estratégica</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe executiva entrará em contato em até 2 horas úteis.');">
+              <div class="form-group">
+                <label>Nome do Responsável</label>
+                <input type="text" placeholder="Ex: Carlos Eduardo" required />
+              </div>
+
+              <div class="form-group">
+                <label>Empresa / CNPJ</label>
+                <input type="text" placeholder="Nome da sua empresa" required />
+              </div>
+
+              <div class="form-group">
+                <label>E-mail Corporativo</label>
+                <input type="email" placeholder="carlos@suaempresa.com.br" required />
+              </div>
+
+              <div class="form-group">
+                <label>Telefone / WhatsApp</label>
+                <input type="tel" placeholder="(11) 99999-9999" required />
+              </div>
+
+              <div class="form-group">
+                <label>Principal Interesse</label>
+                <select>
+                  <option>Planejamento Tributário</option>
+                  <option>Contabilidade Consultiva</option>
+                  <option>Direito Societário / Contratos</option>
+                  <option>Holdings & Sucessão Patrimonial</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" style="padding: 16px; margin-top: 10px;">
+                Solicitar Contato Executivo →
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>Aegis & Associados — Advocacia e Contabilidade</strong>
+        <p>OAB/SP 12.345 | CRC-SP 98.765</p>
+      </div>
+      <p>© 2026 Aegis & Associados. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Menu Mobile Toggle
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    
+    toggle.addEventListener('click', () => { 
+      nav.classList.toggle('open'); 
+    });
+
+    // Fecha o menu mobile ao clicar em um link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+      });
+    });
+
+    // Abas Interativas de Serviços (Split-Screen Tabs)
+    const tabButtons = document.querySelectorAll('.service-tab-btn');
+    const servicePanes = document.querySelectorAll('.service-pane');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+
+        tabButtons.forEach(b => b.classList.remove('active'));
+        servicePanes.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+
+    // Caixas Expansíveis (FAQ Accordion)
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const questionBtn = item.querySelector('.faq-question');
+      questionBtn.addEventListener('click', () => {
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
